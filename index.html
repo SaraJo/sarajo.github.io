@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" language="javascript"> 
+    
+    $(function() {
+ 
+      function iframeHeight() {
+         var newHeight = $(window).height();
+         var buffer = 180;     // space required for any other elements on the page 
+         var newIframeHeight = newHeight - buffer;
+         $('iframe').css('height',newIframeHeight);    //this will aply to all iframes on the page, so you may want to make your jquery selector more specific.
+         sizeColumn(newIframeHeight);
+      }
+
+
+        function sizeColumn(height){
+          $('#meet-column').css('height', height + 300);
+        }
+            window.onresize = iframeHeight();
+        });
+    </script>
+
+    <style>
+
+      iframe {
+        height: 100%;
+        width: 100%;
+        border: black 1px solid;
+      }
+      #frame-container{
+        width:100%;
+        margin:0px;
+        padding:0px;
+        height:100%;
+      }
+      body{
+        height:100%;
+        margin:0px;
+        padding:0px;
+        background-image: url('kindajean.png');
+      }
+      .header
+      {
+        -moz-box-shadow: 0 0 5px #888;
+        -webkit-box-shadow: 0 0 5px#888;
+        box-shadow: 0 0 5px #888;
+        padding-top:20px;
+        padding-left:20px;
+        font-family: 'Advent-Pro', sans-serif;
+        font-size: 40px;
+        text-align:left;
+        font-weight: bold;
+      }
+      #header img{
+        width:100%;
+      }
+      #top-menu{
+        list-style-type: none;
+       }
+       
+       #main-menu{
+         list-style-type: none;
+         height:50px;
+         font-family:Dymo;
+         font-size:50px;
+         margin-left: auto;
+         margin-right: auto;
+         padding-left: 70px;
+       }
+      
+       li{
+         display:inline;
+       }
+       .label-maker{
+        color: ##b48484;
+
+       }
+       #main-menu li{
+         padding-left:40px;
+         color:white;
+       }
+       .melon{
+         background-color:#E4655F;
+         height: 400px; 
+       }
+         .melon a{  
+           color: #9f4642;
+           margin-top:10px;
+           line-height: 110%;
+           font-size:40px;
+         text-shadow: 0px 2px 3px #c39a98;
+       }
+
+       hr{
+         width:200px;
+         border-color: #8f5617;
+       }
+       .lemon{
+         background-color:#E5A359;
+         color: #d17e21;
+         text-shadow: 0px 2px 3px #efc89b;
+         height:100%;
+       }
+       .purple{
+       background-color:#432A48;
+       height: 600px;
+     }
+     .white
+     {
+       background-image: url('kindajean.png');
+       height:10px;
+     }
+    </style>
+
+  </head>
+<body>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span9">
+ <div id="header" class="row"><img src="header3.png"/></div>
+ <div id='root' class="row-liquid">
+   <div id='frame-container'>
+        <iframe src="test.html" id='iframe'></iframe></div>
+  </div></div>
+<div class="span3">
+  <div class="row">
+    <div class="span12 melon header">
+      <a href='http://github.com/sarajo'>github</a></br>
+      <a href='http://twitter.com/sarajchipps'>twitter</a></br>
+      <a href='#'>cv</a></br>
+      <a href='#'>about</a>
+    </div>
+  </div> 
+  <div class="row">
+    <div class="span12 white"></div>
+  </div>
+  <div class="row">
+    <div class="span12 lemon header" id='meet-column'>
+      meet me
+      <hr>
+      here</br>
+      here</br>
+    </div> 
+</div>
+</div>
+</div>
+</div>
