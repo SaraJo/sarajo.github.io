@@ -51,8 +51,6 @@ var FrameManager = {
 
         var hashValue = window.location.hash.substring(1);
 
-        if ((hashValue == null) || (hashValue.length == 0)) return;
-
         var pairs = hashValue.split('&');
 
         if ((pairs != null) && (pairs.length > 0)) {
