@@ -11,7 +11,17 @@
     <script type="text/javascript" language="javascript"> 
     
     $(function() {
- 
+        $('iframe').load(function() {
+             setTimeout(iResize, 50);
+                // Safari and Opera need a kick-start.
+                var iSource = document.getElementById('iframe').src;
+                   document.getElementById('iframe').src = '';
+                      document.getElementById('iframe').src = iSource;
+                      });
+        function iResize() {
+           document.getElementById('iframe').style.height = 
+           document.getElementById('iframe').contentWindow.document.body.offsetHeight + 'px';
+       } 
       function iframeHeight() {
          var newHeight = $(window).height();
          var buffer = 180;     // space required for any other elements on the page 
