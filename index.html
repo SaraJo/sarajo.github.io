@@ -47,9 +47,9 @@ var FrameManager = {
 
     retrieveFrameIdAndHeight: function() {
     
-   //     if (window.location.hash.length == 0) return;
+      if (window.location.length == 0) return;
 
-        var hashValue = window.location.hash.substring(1);
+        var hashValue = window.location.substring(1);
 
         var pairs = hashValue.split('&');
 
@@ -106,7 +106,7 @@ window.setTimeout(FrameManager.init, 300);
 <style>
 
       iframe {
-        height: 100%;
+        height: auto;
         width: 100%;
         -webkit-border-radius: 15px;
         -moz-border-radius: 15px;
@@ -116,7 +116,7 @@ window.setTimeout(FrameManager.init, 300);
 
       #frame-container{
         width:80%;
-        height:100%;
+        height:auto;
         margin-left: auto ;
           margin-right: auto ;
       }
