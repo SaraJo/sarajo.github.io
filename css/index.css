@@ -1,0 +1,97 @@
+      iframe {
+        height: auto;
+        width: 100%;
+        -webkit-border-radius: 15px;
+        -moz-border-radius: 15px;
+        border-radius: 15px;
+        border: 7px #563D5A solid;
+      }
+
+      #frame-container{
+        width:80%;
+        height:auto;
+        margin-left: auto ;
+          margin-right: auto ;
+      }
+      body{
+        margin:0px;
+        padding:0px;
+        background-image: url('crinkle.jpg');
+      }
+      .header
+      {
+        -moz-box-shadow: 0 0 5px #888;
+        -webkit-box-shadow: 0 0 5px#888;
+        box-shadow: 0 0 5px #888;
+        padding-top:20px;
+        padding-left:20px;
+        font-family: 'Advent-Pro', sans-serif;
+        font-size: 25px;
+        text-align:left;
+      }
+      #header img{
+        width:100%;
+      }
+      #top-menu{
+        list-style-type: none;
+       }
+       
+       #main-menu{
+         list-style-type: none;
+         height:50px;
+         font-family:Dymo;
+         font-size:50px;
+         margin-left: auto;
+         margin-right: auto;
+         padding-left: 70px;
+       }
+      
+       li{
+         display:inline;
+       }
+       .label-maker{
+        color: ##b48484;
+
+       }
+       #main-menu li{
+         padding-left:40px;
+         color:white;
+       }
+       .melon{
+         background-color:#E4655F;
+         height: 400px; 
+       }
+         .melon a{  
+           color: #9f4642;
+           margin-top:10px;
+           line-height: 110%;
+           font-size:40px;
+           font-weight: bold;
+         text-shadow: 0px 2px 3px #c39a98;
+       }
+
+       hr{
+         width:200px;
+         border-color: #2a1e2c;
+       }
+       .lemon{
+         background-color:#563D5A;
+         height:100%;
+           color: rgb(200, 177, 204);
+           font-size:30px; 
+       text-shadow: 0px 3px 5px #916697;
+       }
+       .lemon a{
+           color: rgb(200, 177, 204);
+        line-height: 140%;
+           text-shadow: 0px 3px 5px #916697;
+       }
+       .purple{
+       background-color:#432A48;
+       height: 600px;
+     }
+     .white
+     {
+       background-image: url('crinkle.jpg');
+       height:10px;
+     }

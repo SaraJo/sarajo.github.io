@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/index.css" rel="stylesheet" media="screen">
     <link href='http://fonts.googleapis.com/css?family=Kreon' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Advent+Pro' rel='stylesheet' type='text/css'>
@@ -13,111 +15,17 @@
              container: document.getElementById("frame-container"),
              onMessage: function(message, origin){
                      this.container.getElementsByTagName("iframe")[0].style.height = message + "px";
+                     this.getElementById("meet-column").style.height = (message - 300) + "px";
                    }
                 }); 
     </script>
-<script src="js/bootstrap.min.js"></script>
-
-<style>
-
-      iframe {
-        height: auto;
-        width: 100%;
-        -webkit-border-radius: 15px;
-        -moz-border-radius: 15px;
-        border-radius: 15px;
-        border: 7px #563D5A solid;
-      }
-
-      #frame-container{
-        width:80%;
-        height:auto;
-        margin-left: auto ;
-          margin-right: auto ;
-      }
-      body{
-        margin:0px;
-        padding:0px;
-        background-image: url('crinkle.jpg');
-      }
-      .header
-      {
-        -moz-box-shadow: 0 0 5px #888;
-        -webkit-box-shadow: 0 0 5px#888;
-        box-shadow: 0 0 5px #888;
-        padding-top:20px;
-        padding-left:20px;
-        font-family: 'Advent-Pro', sans-serif;
-        font-size: 25px;
-        text-align:left;
-      }
-      #header img{
-        width:100%;
-      }
-      #top-menu{
-        list-style-type: none;
-       }
-       
-       #main-menu{
-         list-style-type: none;
-         height:50px;
-         font-family:Dymo;
-         font-size:50px;
-         margin-left: auto;
-         margin-right: auto;
-         padding-left: 70px;
-       }
-      
-       li{
-         display:inline;
-       }
-       .label-maker{
-        color: ##b48484;
-
-       }
-       #main-menu li{
-         padding-left:40px;
-         color:white;
-       }
-       .melon{
-         background-color:#E4655F;
-         height: 400px; 
-       }
-         .melon a{  
-           color: #9f4642;
-           margin-top:10px;
-           line-height: 110%;
-           font-size:30px;
-         text-shadow: 0px 2px 3px #c39a98;
-       }
-
-       hr{
-         width:200px;
-         border-color: #2a1e2c;
-       }
-       .lemon{
-         background-color:#563D5A;
-         color: #39283c;
-         text-shadow: 0px 3px 5px #916697;
-         height:100%;
-       }
-       .purple{
-       background-color:#432A48;
-       height: 600px;
-     }
-     .white
-     {
-       background-image: url('cork.png');
-       height:10px;
-     }
-    </style>
-
+    <script src="js/bootstrap.min.js"></script>
   </head>
 <body>
 <div class="container-fluid">
   <div class="row-fluid">
     <div class="span9">
- <div id="header" class="row"><img src="header3.png"/></div>
+ <div id="header" class="row"><img src="css/header3.png"/></div>
  <div id='root' class="row-liquid">
    <div id='frame-container'>
         <iframe src="http://sarajchipps.com" id='iframe'></iframe></div>
@@ -127,8 +35,7 @@
     <div class="span12 melon header">
       <a href='http://github.com/sarajo'>github</a></br>
       <a href='http://twitter.com/sarajchipps'>twitter</a></br>
-      <a href='#'>cv</a></br>
-      <a href='#'>about</a>
+      <a href='http://re.vu/sarajchipps'>cv</a></br>
     </div>
   </div> 
   <div class="row">
@@ -136,10 +43,11 @@
   </div>
   <div class="row">
     <div class="span12 lemon header" id='meet-column'>
-      meet me
+      come say hi 
       <hr>
-      here</br>
-      here</br>
+      <a href="https://github.com/nodebots/nodebotsday">nodebots day (7/27)</a></br>
+      <a href="http://2013.lxjs.org/">lxjs (10/2 - 10/3)</a></br>
+      <a href="http://jsconf.co/">jsconf Colombia (10/18- 10/19)</a> 
     </div> 
 </div>
 </div>
