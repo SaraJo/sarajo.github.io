@@ -79,12 +79,12 @@
          background-color:#563D5A;
          height:100%;
            color: rgb(7, 4, 7);
-           font-size:25px; 
+           font-size:20px; 
        text-shadow: 0px 3px 5px rgb(80, 46, 85);
        }
        .lemon a{
            color: rgb(7, 4, 7);
-        line-height: 140%;
+        line-height: 120%;
            text-shadow: 0px 3px 5px rgb(80, 46, 85);
        }
        .purple{
